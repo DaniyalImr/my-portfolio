@@ -3,6 +3,9 @@ import AllSkillsSM from "./AllSkillsSM";
 import SkillsText from "./SkillsText";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import Lottie from "lottie-react";
+import Design from "../../Animation - Design.json"
+import clock from "../../Animation - clock.json"
 
 const SkillsMain = () => {
   return (
@@ -16,6 +19,9 @@ const SkillsMain = () => {
         >
           <SkillsText />
         </motion.div>
+        <div className="w-60 h-60">
+      <Lottie animationData={Design} loop={true} />
+    </div>
         <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
           <AllSkills />
         </div>
@@ -23,6 +29,9 @@ const SkillsMain = () => {
           <AllSkillsSM />
         </div>
       </div>
+      <div className="w-60 h-60">
+      <Lottie animationData={clock} loop={true} />
+    </div>
     </div>
   );
 };

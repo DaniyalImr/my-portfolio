@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
 import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import ContactMeMain from "./components/contactMeSection/ContactMeMain";
+import DownloadResume from "./components/DownloadResume";
 import ExperienceMain from "./components/experienceSection/ExperienceMain";
 import FooterMain from "./components/footer/FooterMain";
 import HeroGradient from "./components/heroSection/HeroGradient";
@@ -9,9 +11,20 @@ import ProjectsMain from "./components/projectsSection/ProjectsMain";
 import SkillsMain from "./components/skillsSection/SkillsMain";
 import SubSkills from "./components/skillsSection/SubSkills";
 import SubHeroMain from "./components/subHeroSection/SubHeroMain";
+import Preloader from "./components/Preloader"; // ✅ Import Preloader
 
 function App() {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000); // Simulated 2-sec loading
+  }, []);
+
+  return loading ? (
+    <Preloader />
+  ) : (
     <main className="font-body text-white relative overflow-hidden">
       <NavbarMain />
       <HeroMain />

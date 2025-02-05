@@ -5,32 +5,32 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Blog Application",
+    year: "Mar2023",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    image: "../../images/website-img-1.jpg",
+    link: "https://github.com/DaniyalImr/Blog.git",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Portfolio",
+    year: "Sept2023",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../images/website-img-2.webp",
+    link: "https://github.com/DaniyalImr/MyPortFolio.git",
   },
   {
-    name: "Tourzania",
+    name: "BookStore",
     year: "Jan2023",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "../../images/website-img-3.jpg",
+    link: "https://github.com/DaniyalImr/bookStore.git",
   },
   {
-    name: "Bank of Luck",
+    name: "CRUD",
     year: "May2024",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../images/website-img-4.jpg",
+    link: "https://github.com/DaniyalImr/CRUD-.git",
   },
 ];
 
@@ -54,6 +54,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link= {project.link}
             />
           );
         })}
