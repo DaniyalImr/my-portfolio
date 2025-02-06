@@ -9,7 +9,7 @@ const HeroMain = () => {
         <HeroText />
         <HeroPic />
       </div>
-      {/*<div>
+     {/* <div>
         <DownloadResume/>
       </div>*/}
     </div>
