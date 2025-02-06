@@ -9,10 +9,6 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
     },
-    fontFamily: {
-      body: ['Josefin Sans', 'sans-serif'],  // For body text
-      special: ['Nunito', 'sans-serif'],   // For special text
-    },
     colors: {
       brown: "#53423e",
       lightBrown: "#645550",
