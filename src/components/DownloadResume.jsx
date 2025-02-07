@@ -2,7 +2,7 @@ import React from "react";
 
 const DownloadResume = () => {
   const handleDownload = () => {
-    const resumeUrl = "/Daniyal Malik_CV.pdf"; // Ensure this matches your file name
+    const resumeUrl = "/Daniyal_Malik_CV.pdf"; // Ensure this matches your file name
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Daniyal_Malik_Resume.pdf"; // Set the desired file name
