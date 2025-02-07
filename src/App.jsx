@@ -25,7 +25,7 @@ function App() {
   return loading ? (
     <Preloader />
   ) : (
-    <main className="container font-body text-white relative overflow-hidden">
+    <main className="font-body text-white relative overflow-hidden">
       <NavbarMain />
       <HeroMain />
       <HeroGradient />
