@@ -7,7 +7,7 @@ const ContactMeRight = () => {
       <img
         src="../../images/email-image.png"
         alt="email image"
-        className="max-w-[300px] animate-rotate3D"
+        className="max-w-[300px] "
       />
       <ContactInfo />
       <ContactSocial />

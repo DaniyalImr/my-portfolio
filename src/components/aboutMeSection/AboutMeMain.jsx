@@ -2,8 +2,6 @@ import AboutMeImage from "./AboutMeImage";
 import AboutMeText from "./AboutMeText";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-import Computer from "../../Computer.json";
-import Lottie from "lottie-react";
 
 const AboutMeMain = () => {
   return (
